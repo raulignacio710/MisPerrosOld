@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Mis Perris</title>
+    <meta name="description" content="Pagina completa con Flexbox"><!--Utilizamos el descriptor en meta para apoyar la busqueda de contenidos en la web-->
+    <meta name="viewport" content="width=device-widtg, user-scalable=no, initial-scale=1.0,maximun-scale=1.0,minimun-scale=1.0"><!--las escalas indican un punto inicial, la escala maxima y minima-->
+    <script src="js/prefix.js" type="test/javascript"></script><!--Script para asegurarq eu en todos los navegadores y dispositivos el sitio se vea igual-->
+	<link rel="stylesheet" href="css/estilos.css"> <!-- aqui llamo al archivo de css para que los cambios visuales hechos por el sean realizados-->
+	<script src="js/jquery.js"></script> <!-- aqui se llama a el archivo javascript para que reconosca las sentencias de los demas js-->
+	<script src="js/jquery.bxslider.min.js"></script> <!-- es como el anterior pero es exclusivamente para el carrusel-->
+	<link rel="stylesheet" href="css/jquery.bxslider.css"> <!-- este es para configurar el carrusel-->
+</head>
+    <body>
+        <div class="contenedor">
+		<header><!-- de aqui en adelante es el header que tiene el logoel titulo y los botones principales de la pagina-->
+			<div class="logo">
+				<img src="images/huella.png" width="150" alt="">
+				<a href="#">Mis Perris</a>
+			</div>
+
+			<nav>
+				<a href="#">Inicio</a>
+				<a href="#">Quienes somos</a>
+				<a href="#">Servicios</a>
+				<a href="#">Contáctanos</a>
+			</nav>
+		</header>
+		<!-- este es el contenedor principal de la pagina-->
+		<section class="main">
+			<!-- aqui esta el carrusel junto con sus imagenes-->
+			<div id=carrusel>
+				<img src="images/adop1.jpg" width="150" alt="">
+				<img src="images/adop2.jpg" width="150" alt="">
+				<img src="images/adop3.jpg" width="150" alt="">
+			</div>
+			<!-- aqui estan los iconos de redes sociales-->
+			<div class="redsocial">
+					<a href="http://www.facebook.com"><img src="https://png.icons8.com/plasticine/50/000000/facebook.png"></a>
+					<a href="http://www.instagram.com"><img src="https://png.icons8.com/plasticine/50/000000/instagram-new.png"></a>
+				    <a href="http://plus.google.com"><img src="https://png.icons8.com/plasticine/50/000000/google-plus.png"></a>
+					<a href="http://www.twitter.com"><img src="https://png.icons8.com/plasticine/50/000000/twitter.png"></a>
+			</div>
+			<!-- aqui se llama al script del carrusel-->
+			<script src="js/carruselcito.js"></script>
+			<!-- aqui vienen los dos articulos que contienen los textos de la pagina principal-->
+			
+			<article>
+				
+				<!--aqui utilice los articulos del flex para editarlos y poner la informacion de la pagina de perris-->
+				<h2 class="titulo">RESCATE</h2>
+				<h4 class="subtitulo">ETAPA UNO</h4>
+				<p>Rescatamos perros en situacion de peligro y/o abandono.
+				   Los Rehabilitamos y los preparamos para buscarles un hogar.</p>
+			</article>
+			<!--agregue fotos entre los articulos ya que en la imagen de muestra de perris esta de esa manera-->
+			<div class="foto1">
+				<img style="float: right" src="images/imagen1.jpg" width="150" alt="">
+			</div>
+			<div class="foto2">
+				<img src="images/imagen2.jpg" width="150" alt="">
+			</div>
+			<article>
+				<h2 class="titulo2">CROWDFUNDING</h2>
+				<h4 class="subtitulo2">FINANCIAMIENTO</h4>
+				<p>Sigue nuestras redes sociales para informarte acerca de diversas campañas
+				   y actividades que realizamos  para obtener financiamento para seguir ayudando.</p>
+			</article>
+			<input class="boton_camp" type="button" value="CAMPAÑAS">
+		</section>
+		<!-- segundo contenedor que tiene el colache de fotos-->
+		<div class="contenedor2">
+			<div class="caja">
+					<img src="images/perro1.jpg" width="Nueve" >
+					<img src="images/perro2.jpg" width="Nueve" >
+					<img src="images/perro3.jpg" width="Nueve" >
+			</div>
+			<div class="caja largo">
+					<img src="images/perro4.jpg" width="Nueve" >
+					<img src="images/perro5.jpg" width="Nueve" >
+			</div>
+			<div class="caja">
+					<img src="images/perro6.jpg" width="Nueve"  style="height:62%">
+					<img src="images/perro7.jpg" width="Nueve" >
+			</div>
+			
+		</div>
+		<!-- aqui se llama al archivo js que contiene la programacion de las validaciones-->
+		<footer>
+			<h5 class="fin">Desarrollo Web y Mobile</h5>
+		</footer>
+    </body>
+</html>

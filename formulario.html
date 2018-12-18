@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Mis Perris</title>
+    <meta name="description" content="Pagina completa con Flexbox"><!--Utilizamos el descriptor en meta para apoyar la busqueda de contenidos en la web-->
+    <meta name="viewport" content="width=device-widtg, user-scalable=no, initial-scale=1.0,maximun-scale=1.0,minimun-scale=1.0"><!--las escalas indican un punto inicial, la escala maxima y minima-->
+    <script src="js/prefix.js" type="test/javascript"></script><!--Script para asegurarq eu en todos los navegadores y dispositivos el sitio se vea igual-->
+	<script src="js/jquery.js"></script> 
+	<link rel="stylesheet" href="css/estilos.css"> <!-- aqui llamo al archivo de css para que los cambios visuales hechos por el sean realizados-->
+</head>
+    <body>
+        <div class="contenedor">
+		<header>  <!-- de aqui en adelante es el header que tiene el logoel titulo y los botones principales de la pagina-->
+			<div class="logo">
+				<img src="images/huella.png" width="150" alt="">
+				<a href="#">Mis Perris</a>
+			</div>
+
+			<nav>
+				<a href="#">Inicio</a>
+				<a href="#">Quienes somos</a>
+				<a href="#">Servicios</a>
+				<a href="#">Contáctanos</a>
+			</nav>
+		</header>
+		<!-- aqui esta el inicio del formulario contiene los texbox y los combobox de el registro-->
+		<form id="registration_form" action="#" method="post">
+			<section class="formulario">
+				<h1>Formulario de Adopcion</h1>
+				<input type="text" id="correo" placeholder=" Correo Electronico" required>
+				<td><span class="error" id="errorcorreo"></span></td>
+				<input type="text" id="rut" placeholder=" Run" maxlength="10" required>
+				<td><span class="error" id="errorrut"></span></td>
+				<input type="text" id="nombre" placeholder=" Nombre" required>
+				<input type="date" id="fecha" placeholder=" Fecha de Nacimiento" required>
+				<input type="tel" id="telefono" placeholder=" Telefono" maxlength="9" required>
+				<td><span class="error" id="errortelefono"></span></td>
+				<SELECT id="Region" SIZE=1 required>
+					<option>Seleccione una Region </option> 
+					<OPTION>Region de Antofagasta</OPTION> 
+					<OPTION>Region Metropolitana</OPTION>
+					<OPTION>Region de Valparaiso</OPTION>
+					<OPTION>Region de los Lagos</OPTION>
+				</SELECT>
+				<SELECT id="Region" SIZE=1  required>
+					<option>Seleccione una Ciudad </option> 
+					<OPTION>Valparaiso</OPTION> 
+					<OPTION>Ñuñoa</OPTION>
+					<OPTION>Los Lagos</OPTION>
+					<OPTION>Antofagasta</OPTION>
+				</SELECT>  
+				<SELECT id="Vivienda" SIZE=1  required>
+						<option>Seleccione Tipo Vivienda </option> 
+						<OPTION>Casa con patio grande</OPTION> 
+						<OPTION>Casa con patio pequeño</OPTION>
+						<OPTION>Casa sin patio</OPTION>
+						<OPTION>Departamento</OPTION>
+				</SELECT> 
+				<input type="submit" id="but_registrar" value="Registrar">
+	
+			</section>	
+		</form>
+		<!-- final de la pagina donde esta un pequeño texto-->
+		<footer>
+			<h5 class="fin">Desarrollo Web y Mobile</h5>
+			<p class="validadores" align="center">
+				<a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" /></a>
+				<a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-html401" alt="Valid HTML 4.01!" height="31" width="88"></a>
+			</p>
+			
+		</footer>
+	</div>
+	<!-- aqui se llama al archivo js que contiene la programacion de las validaciones-->
+	<script  src="js/formu.js"></script>    
+    </body>
+</html>
